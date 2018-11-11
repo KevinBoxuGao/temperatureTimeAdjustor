@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "C:\\MinGW\\bin",
+                "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include\\c++",
+                "${workspaceFolder}\\lib",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/lib/boost_1_68_0"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "C:\\MinGW\\bin",
+                    "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include\\c++",
+                    "${workspaceFolder}\\lib",
+                    "${workspaceFolder}/src",
+                    "${workspaceFolder}/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}
