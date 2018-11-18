@@ -1,22 +1,21 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "InputFiles.h"
-#include "OutputFiles.h"
+#include "input_files.h"
+#include "output_files.h"
 
 int main() {
-    InputFiles Temperatures;
-    std::vector<std::string> TemperatureFiles = Temperatures.findFileNames("input/Temps");
-    InputFiles Original;
-    std::vector<std::string> OriginalFile = Original.findFileNames("input");
-
-    OutputFiles TemperatureChanges;
-    for(int x = 0; x < (Temperatures.findFileNames("input/Temps")).size(); x++) {
-        std::cout << TemperatureFiles[x] << std::endl;
-    }
+    InputFiles temperature_changes;
+    std::vector<std::string> temperature_changes_files = temperature_changes.FindFileNames("input/TemperatureChanges");
     
-    for(int x = 0; x < (Temperatures.findFileNames("input/Temps")).size(); x++) {
-        TemperatureChanges.Adjust(TemperatureFiles[x], OriginalFile[0]);
+    InputFiles original;
+    std::string original_file = original.FindFileNames("input")[0];
+   
+    OutputFiles temperature_changes_output(original.FindUnchangingData(original_file));
+
+    for(int x = 0; x < temperature_changes_files.size(); x++) {
+        temperature_changes_output.Adjust(temperature_changes_files[x]);
+        std::cout << "complete" << std::endl;
     }
     
     return 0;
