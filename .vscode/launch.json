@@ -9,7 +9,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/temperatureTimeAdjustor.exe",
+            "program": "${workspaceFolder}/temperatureFileAdjustor.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

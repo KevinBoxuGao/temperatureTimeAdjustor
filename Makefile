@@ -7,7 +7,7 @@ INCLUDEDIR ?= include
 
 LIBS = lib/boost_1_68_0/stage/lib/libboost_filesystem-mgw63-mt-d-x32-1_68.a lib/boost_1_68_0/stage/lib/libboost_filesystem-mgw63-mt-x32-1_68.a lib/boost_1_68_0/stage/lib/libboost_system-mgw63-mt-d-x32-1_68.a lib/boost_1_68_0/stage/lib/libboost_system-mgw63-mt-x32-1_68.a 
 
-SRCS := file_finder file NodeFile TempFile matcher main 
+SRCS := InputFiles OutputFiles main 
 OBJS := $(SRCS:%=$(BUILDDIR)/%.o)
 INCS := -I $(INCLUDEDIR) 
 
