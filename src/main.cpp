@@ -13,9 +13,8 @@ int main() {
    
     OutputFiles temperature_changes_output(original.FindUnchangingData(original_file));
 
-    for(int x = 0; x < temperature_changes_files.size(); x++) {
+    for(unsigned int x = 0; x < temperature_changes_files.size(); x++) {
         temperature_changes_output.Adjust(temperature_changes_files[x]);
-        std::cout << "complete" << std::endl;
     }
     
     return 0;
